@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,105 +9,255 @@
 
     <style>
         body {
-            font-family: Helvetica, sans-serif,;
-            background-color: #f8f8f3;
+            font-family: Helvetica, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
         }
 
         .navbar {
-            background-color: #174d35;
+            background-color: #006477;
+            padding: 15px;
         }
 
-        .navbar-brand, .nav-link {
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover {
             color: white;
         }
 
+        .nav-link {
+            color: white;
+            margin-left: 15px;
+        }
+
         .nav-link:hover {
-            color: #f0d46a;
+            color: #d5eaf0;
         }
 
         .header {
             text-align: center;
-            padding: 35px 20px;
-            background-color: #e9eee7;
+            padding: 40px 20px;
+            background-color: white;
         }
 
         .header img {
             width: 100%;
-            max-height: 350px;
+            height: 350px;
             object-fit: cover;
-            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin-top: 25px;
+            color: #006477;
+        }
+
+        .header p {
+            color: #555;
         }
 
         .campus-section {
-            padding: 35px 20px;
+            padding: 40px 20px 50px;
+        }
+
+        .campus-title {
             text-align: center;
+            color: #006477;
+            margin-bottom: 30px;
         }
 
         .campus-card {
             background-color: white;
+            text-align: center;
             padding: 20px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            height: 100%;
+        }
+
+        .campus-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            margin-bottom: 25px;
+        }
+
+        .campus-card h4 {
+            color: #006477;
+            margin-bottom: 30px;
+            min-height: 30px;
+        }
+
+        .inquire-btn {
+            background-color: #006477;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .inquire-btn:hover {
+            background-color: #004b5a;
+            color: white;
         }
 
         footer {
-            background-color: #174d35;
+            background-color: #006477;
             color: white;
             text-align: center;
-            padding: 18px;
+            padding: 25px;
         }
     </style>
 </head>
 
 <body>
 
-   
     <nav class="navbar navbar-expand-lg">
         <div class="container">
+
             <a class="navbar-brand" href="#home">
                 OB Montessori Center
             </a>
 
             <button class="navbar-toggler bg-light" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarLinks"
-                aria-controls="navbarLinks" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-toggle="collapse" data-bs-target="#navbarLinks">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarLinks">
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#campuses">Campuses</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="https://obmontessorifairview.orangeapps.ph/oa_school/">
-                            Portal
+                        <a class="nav-link"
+                        href="https://obmontessori.orangeapps.ph/landing/obmontessori/"
+                        target="_blank">
+                            School Portal
                         </a>
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
-    
     <section class="header" id="home">
         <div class="container">
-            <img src="obmc.jpg" alt="OB Montessori Center campus">
+
+            <img src="https://static1.squarespace.com/static/664c7ae50eea9c731b37e817/t/6a5f8e02ce141d63995e575f/1784647171093/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" alt="OB Montessori Center">
 
             <h1>Welcome to OB Montessori Center</h1>
+
             <p>A place for learning, growth, and discovery.</p>
+
+        </div>
+    </section>
+    
+<section class="campus-section" id="campuses">
+        <div class="container-fluid">
+
+            <h2 class="campus-title">Our Campuses</h2>
+
+            <div class="row g-4">
+
+                <div class="col-lg col-md-4 col-sm-6">
+                    <div class="campus-card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCWgXsAqZNLVmQ5ctn9t7v-KMyFcF7LoX_oS7WDFCkjBcHigCHAnj5xVQ8&s=10" alt="Fairview Campus">
+
+                        <h4>Fairview</h4>
+
+                        <a href="#contact" class="inquire-btn">
+                            Inquire Now
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-sm-6">
+                    <div class="campus-card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFlOMYYZ-TtxgjxJE8Bw5TQuAz9SjqUd-En8O-u6uiOR6cc_X3i2zUfwYK&s=10" alt="Greenhills Campus">
+
+                        <h4>Greenhills</h4>
+
+                        <a href="#contact" class="inquire-btn">
+                            Inquire Now
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-sm-6">
+                    <div class="campus-card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtlS5ke4aP-78LRpsjS1X085scy0FMni4UZ9MO3GvtZA&s=10" alt="Angeles Campus">
+
+                        <h4>Angeles</h4>
+
+                        <a href="#contact" class="inquire-btn">
+                            Inquire Now
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-sm-6">
+                    <div class="campus-card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQ8DWjt43ldlxuDFKnTjpsjDiQBVWmh5go7G8g7rB4p6CuUgHMEqBfYc&s=10" alt="Las Piñas Campus">
+                        
+                        <h4>Las Piñas</h4>
+
+                        <a href="#contact" class="inquire-btn">
+                            Inquire Now
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-sm-6">
+                    <div class="campus-card">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCOd23tNuiV4p5tZFESoVw7mkswv1dqG10IJPSfFkyeFeE2iLAxxbWjam4&s=10" alt= "Sta. Ana Campus">
+                        <h4>Sta. Ana</h4>
+
+                        <a href="#contact" class="inquire-btn">
+                            Inquire Now
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
+    <footer id="contact">
+
+        <p><b>OB Montessori Center</b></p>
+
+        <p>Learning Today, Leading Tomorrow.</p>
+
+        <p>&copy; 2026 OB Montessori Center. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
     
